@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Banner from "../../components/Banner/banner";
+import Card from "../../components/Card/card"
+import img from "../../components/Images/home-banner.jpg";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export default function Home() {
+    return (
+        <div>
+            <Banner src={img} title={"Chez vous, partout et ailleurs"} alt="Photo d'une côte" />
+            <Card />
+        </div>
+    )
+};
