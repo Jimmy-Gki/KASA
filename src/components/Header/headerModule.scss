@@ -1,0 +1,52 @@
+@import "../../css/utils/variables";
+
+    .header {
+        max-width: 100%;
+        display: flex;
+        padding-top: 40px;
+        justify-content: space-between;
+        margin: 0 100px;
+
+        img {
+            width: 210px;
+            height: 68px;
+        }
+
+        .nav {
+            align-items: center;
+            display: flex;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            width: 20%;
+            font-size: 24px;
+            font-weight: 500;
+            justify-content: space-between;
+
+            a {
+                color: #FF6060;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+@media (max-width: $Mobile-size) {
+    .header {
+        margin: 0 20px;
+        max-width: 100%;
+        padding-top: 20px;
+
+        img {
+            width: 145px;
+            height: 47px;
+        }
+
+        .nav {
+            width: 35%;
+            font-size: 14px;
+        }
+    }
+}

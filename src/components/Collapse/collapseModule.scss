@@ -1,0 +1,66 @@
+@import "../../css/utils/variables";
+
+.menu {
+    margin: 0 208px 30px 208px;
+    max-width: 100%;
+    background: #F7F7F7;
+    border-radius: 5px;
+
+    .title {
+        background: #FF6060;
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        width: auto;
+        justify-content: space-between;
+        line-height: 142.6%;
+        border-radius: 5px;
+        height: 47px;
+        padding: 0 33px 0 18px;
+
+        .iconClose {
+            transform: rotate(0deg);
+            transition: all 0.2s;
+        }
+
+        .iconOpen {
+            transform: rotate(180deg);
+            transition: all 0.2s;
+        }
+    }
+
+    .text {
+        width: auto;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 146.6%;
+        color: #FF6060;
+        padding: 36px 27px 19px 18px;
+    }
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+@media (max-width: $Mobile-size) {
+    .menu {
+        margin: 0 20px 30px 20px;
+
+        .title {
+            font-size: 13px;
+            padding-right: 7px;
+        }
+
+        .iconClose, .iconOpen {
+            scale: 0.6;
+        }
+
+        .text {
+            font-size: 12px;
+        }
+    }
+}
