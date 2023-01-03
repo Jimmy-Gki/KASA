@@ -60,9 +60,11 @@ background-color: #FF6060;
         margin: 32px 0;
         padding: 0;
         justify-content: space-around;
+        display: block;
     }
 
     .cardContainer {
+        margin: 16px 20px 32px 20px;
         height: 225px;
         max-width: 100%;
         width: auto;

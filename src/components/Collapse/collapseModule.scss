@@ -47,6 +47,11 @@
 }
 
 @media (max-width: $Mobile-size) {
+
+    .collapse {
+        margin-bottom: 168px;
+    }
+
     .menu {
         margin: 0 20px 30px 20px;
 

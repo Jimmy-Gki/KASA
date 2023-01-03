@@ -12,7 +12,7 @@ function Card() {
     return (
         <div className="cardBackground">
             {lodgings.map((lodging) => (
-                <Link to={`/lodgings/${lodging.id}`} key={lodging.id}>
+                <Link to={`lodging/${lodging.id}`} key={lodging.id}>
                     <div key={lodging.id} className="cardContainer">
                         <img src={lodging.cover} alt={lodging.title} className="cover"/>
                         <div className="cardTitle">{lodging.title}</div>
