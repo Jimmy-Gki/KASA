@@ -13,7 +13,7 @@ background-color: #F7F7F7;
 .cardContainer {
 width: 340px;
 height: 340px;
-margin-bottom: 50px;
+margin: 0 10px 50px 10px;
 border-radius: 10px;
 display: flex;
 justify-content: flex-start;
@@ -43,7 +43,7 @@ background-color: #FF6060;
         color: #FFFFFF;
         line-height: 142.6%;
         overflow-wrap: break-word;
-        width: 295px;
+        width: 21%;
         padding-left: 1rem;
         padding-top: 17.5rem;
         text-decoration: none;
@@ -65,7 +65,7 @@ background-color: #FF6060;
 
     .cardContainer {
         margin: 16px 20px 32px 20px;
-        height: 225px;
+        height: 255px;
         max-width: 100%;
         width: auto;
 
@@ -74,8 +74,17 @@ background-color: #FF6060;
         }
 
         .cardTitle {
-            padding-top: 11.5rem;
+            padding-top: 13rem;
             font-size: 13px;
+            width: 80%;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cardContainer {
+        .cardTitle {
+            width: 30%;
         }
     }
 }

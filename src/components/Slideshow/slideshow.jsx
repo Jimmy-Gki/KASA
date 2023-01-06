@@ -24,12 +24,12 @@ function Slideshow ({images}) {
         <section className="slideContainer">
             <div className="slide">
                 <img src={images[index]} alt={images.title} key={images.id} />
+                    <img className="arrowLeft" src={arrowLeft} onClick={previewSlide} alt="Left Arrow" />
+                    <img className="arrowRight" src={arrowRight} onClick={nextSlide} alt="Right Arrow" />
             </div>
-            <img className="arrowLeft" src={arrowLeft} onClick={previewSlide} alt="Left Arrow" />
-            <div className="indexInfo">
-                {index + 1}/{images.length}
-            </div>
-            <img className="arrowRight" src={arrowRight} onClick={nextSlide} alt="Right Arrow" />
+                <div className="indexInfo">
+                    {index + 1}/{images.length}
+                </div>
         </section>
     );
 }

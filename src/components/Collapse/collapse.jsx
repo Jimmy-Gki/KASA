@@ -8,12 +8,12 @@ function Collapse({title, text}) {
 
     return isOpen ? (
         <div className="menu">
-        <div className="title" onClick={() => setOpen(false)}>
-            {title}
-            <img className="iconOpen" src={icon} alt="icone menu ouvert" />
+            <div className="title" onClick={() => setOpen(false)}>
+                {title}
+                <img className="iconOpen" src={icon} alt="icone menu ouvert" />
+            </div>
+            <div className="text">{text}</div>
         </div>
-        <div className="text">{text}</div>
-    </div>
     ) : ( 
         <div className="menu">
             <div className="title" onClick={() => setOpen(true)}>

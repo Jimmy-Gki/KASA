@@ -6,6 +6,7 @@ import fullStar from "../Images/full-star.png";
 function LodgingDetails ({details}) {
 
     const scaleRating = details.rating
+    console.log(details)
 
     //On créer un tableau pour ajouter une variable [i], pour faire correspondre la note de l'établissement avec la note dans le tableau
     const starRating = []
@@ -19,16 +20,16 @@ function LodgingDetails ({details}) {
     }
 
     return(
-        <div className="ficheContainer">
+        <div className="ficheDetails">
             <div className="detailsGauche">
                 <div className="detailsTitre">
                     {details.title}
                 </div>
-                <div className="detailsLocalisation">
+                <div className="detailsLoc">
                     {details.location}
                 </div>
                 <div className="tags">
-                    {details.tag.map((tagsNumber) => (
+                    {details.tags?.map((tagsNumber) => (
                         <div className="tag" key={tagsNumber+details.id}>{tagsNumber}</div>
                     ))}
                 </div>
@@ -43,7 +44,7 @@ function LodgingDetails ({details}) {
                     </div>
                 </div>
                 <div className="detailsRating">
-                    {starRating.map((starNumber, index) => 
+                    {starRating?.map((starNumber, index) => 
                     <img src={starNumber ? fullStar : emptyStar} alt={starNumber ? "full star" : "empty star"} key={starNumber+details.id+index} />
                     )}
                 </div>

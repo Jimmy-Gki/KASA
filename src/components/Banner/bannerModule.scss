@@ -52,12 +52,20 @@
         }
 
         .title {
-            font-size: 22px;
+            font-size: 24px;
             display: flex;
             align-items: flex-end;
-            margin-right: 39%;
+            margin-right: 33%;
             padding-left: 32px;
             line-height: 100%;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .banner {
+        .title {
+            font-size: 38px;
         }
     }
 }

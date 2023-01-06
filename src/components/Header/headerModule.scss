@@ -45,8 +45,39 @@
         }
 
         .nav {
-            width: 35%;
+            width: 40%;
             font-size: 14px;
+            white-space: nowrap;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .header {
+        img {
+            scale: 0.8;
+        }
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .header {
+        .nav {
+            width: 30%;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .header {
+        .nav {
+            white-space: nowrap;
+            width: 30%;
+            margin-right: 40px;
+            a {
+                margin-left: 20px;
+            }
         }
     }
 }

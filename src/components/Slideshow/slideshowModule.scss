@@ -1,3 +1,73 @@
+@import "../../css/utils/variables";
+
 .slideContainer {
-    background-color: blue;
+    max-width: 100%;
+    margin: 20px 100px 24px 100px;
+    position: relative;
+
+    .slide {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        position: relative;
+        justify-content: center;
+
+        img {
+            height: 415px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+        .arrowLeft {
+            position: absolute;
+            cursor: pointer;
+            width: 47px;
+            height: 79px;
+            left: 2%;
+        }
+    
+        .arrowRight {
+            position: absolute;
+            cursor: pointer;
+            width: 47px;
+            height: 79px;
+            right: 2%;
+        }
+    }
+
+    .indexInfo {
+        position: absolute;
+        font-size: 18px;
+        left: 50%;
+        top: 90%;
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: $Mobile-size) {
+    .slideContainer {
+        margin: 27px 20px 15px 20px;
+        
+        .slide {
+            img {
+                border-radius: 10px;
+                height: 255px;
+            }
+
+            .arrowLeft {
+                width: 24px;
+                height: 24px;
+            }
+
+            .arrowRight {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .indexInfo {
+            left: 46%;
+        }
+    }
 }
