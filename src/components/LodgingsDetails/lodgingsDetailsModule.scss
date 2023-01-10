@@ -3,7 +3,7 @@
 .ficheDetails {
     justify-content: space-between;
     display: flex;
-    margin: 24px 100px 0 100px;
+    margin: 24px $marginLarge 0 $marginLarge;
 }
 
 .detailsGauche {
@@ -11,14 +11,14 @@
 
     .detailsTitre {
         font-size: 36px;
-        color: #FF6060;
+        color: $colorPrimary;
         font-weight: 500;
         line-height: 142.6%;
         align-items: flex-end;
     }
 
     .detailsLoc {
-        color: #FF6060;
+        color: $colorPrimary;
         font-size: 18px;
         font-weight: 500;
         align-items: flex-end;
@@ -30,10 +30,10 @@
         justify-content: flex-start;
         align-items: center;
         margin: 20px 0 24px 0;
-        color: #FFFFFF;
+        color: $colorSecond;
 
         .tag {
-            background-color: #FF6060;
+            background-color: $colorPrimary;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -61,7 +61,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #FF6060;
+        color: $colorPrimary;
 
         .hostName {
             font-size: 18px;
@@ -100,9 +100,9 @@
     }
 }
 
-@media (max-width: $Mobile-size) {
+@media (max-width: $sizeMobile) {
     .ficheDetails {
-        margin: 15px 20px 0 20px;
+        margin: 15px $marginMobile 0 $marginMobile;
         display: block;
     }
 

@@ -8,7 +8,7 @@
         justify-content: center;
         font-size: 288px;
         font-weight: 700;
-        color: #FF6060;
+        color: $colorPrimary;
         align-items: center;
         text-align: center;
         line-height: 146.6%;
@@ -23,7 +23,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        color: #FF6060;
+        color: $colorPrimary;
     }
 
     .errorLink {
@@ -33,14 +33,14 @@
         align-items: flex-end;
         display: flex;
         justify-content: center;
-        color: #FF6060;
+        color: $colorPrimary;
         text-decoration-line: underline;
         line-height: 146.6%;
         margin: 180px 0 160px 0;
     }
 }
 
-@media (max-width: $Mobile-size) {
+@media (max-width: $sizeMobile) {
 
     .errorContainer {
 

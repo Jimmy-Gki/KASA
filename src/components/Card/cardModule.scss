@@ -1,7 +1,7 @@
 @import "../../css/utils/variables";
     
 .cardBackground {
-margin: 32px 100px; //1 rem = 16px
+margin: 32px $marginLarge; //1 rem = 16px
 padding: 2rem;
 display: flex;
 flex-wrap: wrap;
@@ -19,7 +19,7 @@ display: flex;
 justify-content: flex-start;
 align-items: flex-start;
 background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
-background-color: #FF6060;
+background-color: $colorPrimary;
 
     &__:hover {
         box-shadow: 4px 6px 11px 4px rgba(0, 0, 0, 0.8);
@@ -40,7 +40,7 @@ background-color: #FF6060;
         font-size: 18px;
         position: absolute;
         align-items: flex-end;
-        color: #FFFFFF;
+        color: $colorSecond;
         line-height: 142.6%;
         overflow-wrap: break-word;
         width: 21%;
@@ -52,7 +52,7 @@ background-color: #FF6060;
 
 
 //////////MEDIA QUERIES MOBILE//////////
-@media (max-width: $Mobile-size) {
+@media (max-width: $sizeMobile) {
 
     .cardBackground {
         background: none;
@@ -64,7 +64,7 @@ background-color: #FF6060;
     }
 
     .cardContainer {
-        margin: 16px 20px 32px 20px;
+        margin: 16px $marginMobile 32px $marginMobile;
         height: 255px;
         max-width: 100%;
         width: auto;

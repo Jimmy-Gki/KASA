@@ -6,13 +6,13 @@
     border-radius: 5px;
 
     .title {
-        background: #FF6060;
+        background: $colorPrimary;
         margin-top: 30px;
         font-weight: 500;
         font-size: 24px;
         display: flex;
         align-items: center;
-        color: #FFFFFF;
+        color: $colorSecond;
         width: auto;
         justify-content: space-between;
         line-height: 142.6%;
@@ -37,7 +37,7 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 146.6%;
-        color: #FF6060;
+        color: $colorPrimary;
         padding: 36px 27px 19px 18px;
     }
 }
@@ -46,14 +46,14 @@
     cursor: pointer;
 }
 
-@media (max-width: $Mobile-size) {
+@media (max-width: $sizeMobile) {
 
     .collapse {
         margin-bottom: 168px;
     }
 
     .menu {
-        margin: 0 20px 30px 20px;
+        margin: 0 $marginMobile 30px $marginMobile;
 
         .title {
             font-size: 13px;

@@ -20,7 +20,7 @@
     }
 }
 
-@media (max-width: $Mobile-size) {
+@media (max-width: $sizeMobile) {
 
     .collapseLodging {
         display: block;
@@ -37,7 +37,7 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) {
     .collapseLodging {
         display: flex;
         margin: 40px 62px;

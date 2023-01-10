@@ -1,7 +1,7 @@
 @import "../../css/utils/variables";
 
     .banner {
-        margin: 63px 100px 32px 100px;
+        margin: 63px $marginLarge 32px $marginLarge;
 
         .container {
             width: 100%;
@@ -28,18 +28,18 @@
             font-weight: 500;
             position: absolute;
             font-style: normal;
-            color: #FFFFFF;
+            color: $colorSecond;
             line-height: 142.6%;
             letter-spacing: 1px
         }
     };
 
 /***********    MEDIA QUERIES MOBILE    ***********/
-@media (max-width: $Mobile-size) {
+@media (max-width: $sizeMobile) {
     .banner {
         max-width: 100%;
         height: 111px;
-        margin: 16px 20px 32px 20px;
+        margin: 16px $marginMobile 32px $marginMobile;
 
         .container {
             height: 111px;
