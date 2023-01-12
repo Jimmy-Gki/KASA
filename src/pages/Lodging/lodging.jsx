@@ -1,4 +1,3 @@
-import React from "react";
 import { Navigate, useParams } from "react-router-dom";
 import API from "../../API.json";
 import Slideshow from "../../components/Slideshow/slideshow";

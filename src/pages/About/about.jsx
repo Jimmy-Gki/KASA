@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../../components/Banner/banner";
 import imgAbout from "../../components/Images/home-banner-about.jpg";
 import Collapse from "../../components/Collapse/collapse";
@@ -6,7 +5,7 @@ import Collapse from "../../components/Collapse/collapse";
 export default function About() {
     return(
         <div className="collapse_menu">
-            <Banner src={imgAbout} title="" alt="Photo d'une montagne" className="bannerAbout" style={{height: 1000 }} />
+            <Banner src={imgAbout} title="" alt="Photo d'une montagne" className="bannerAbout" />
             <div className="collapse">
                 <Collapse title="Fiabilité" text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
                 <Collapse title="Respect" text="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
@@ -16,3 +15,5 @@ export default function About() {
         </div>
     )
 };
+
+
