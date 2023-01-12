@@ -26,7 +26,6 @@ function Card() {
 //Sécurisation des props avec propTypes pour préciser les types de chacunes des propriétés
 Card.propTypes = {
     key: PropTypes.string, //label = id des lodgings
-    picture: PropTypes.string, //picture = image des lodgings
     title: PropTypes.string, //title = titre des lodgings
 }
 
